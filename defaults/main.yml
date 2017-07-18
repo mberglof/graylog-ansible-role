@@ -42,22 +42,13 @@ graylog_rest_thread_pool_size:        16
 graylog_elasticsearch_template_name:                    'graylog-internal'
 graylog_allow_leading_wildcard_searches:                'False'
 graylog_allow_highlighting:                             'False'
-graylog_elasticsearch_config_file:                      ''
 graylog_elasticsearch_shards:                           4
 graylog_elasticsearch_replicas:                         0
 graylog_elasticsearch_index_prefix:                     'graylog'
-graylog_elasticsearch_cluster_name:                     'graylog'
-graylog_elasticsearch_node_name_prefix:                 'graylog-'
-graylog_elasticsearch_transport_tcp_port:               9350
-graylog_elasticsearch_discovery_zen_ping_unicast_hosts: '127.0.0.1:9300'
-graylog_elasticsearch_network_host:                     ''
-graylog_elasticsearch_network_bind_host:                ''
-graylog_elasticsearch_network_publish_host:             ''
 graylog_elasticsearch_analyzer:                         'standard'
 graylog_elasticsearch_output_batch_size:                25
 graylog_elasticsearch_output_flush_interval:            1
 graylog_elasticsearch_disable_version_check:            'True'
-graylog_elasticsearch_http_enabled:                     'False'
 graylog_disable_index_optimization:                     'True'
 graylog_index_optimization_max_num_segments:            1
 
@@ -91,8 +82,6 @@ graylog_output_fault_penalty_seconds:     30
 graylog_async_eventbus_processors:        2
 
 # Timeouts
-graylog_elasticsearch_cluster_discovery_timeout:       5000
-graylog_elasticsearch_discovery_initial_state_timeout: '3s'
 graylog_elasticsearch_request_timeout:                 '1m'
 graylog_index_ranges_cleanup_interval:                 '1h'
 graylog_stream_processing_timeout:                     2000
