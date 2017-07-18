@@ -1,7 +1,7 @@
 ---
 dependencies:
 
-  - role: 'lesmyrmidons.mongodb'
+  - role: 'SoInteractive.mongodb'
     when: graylog_install_mongodb
 
   - role: 'elastic.elasticsearch'
